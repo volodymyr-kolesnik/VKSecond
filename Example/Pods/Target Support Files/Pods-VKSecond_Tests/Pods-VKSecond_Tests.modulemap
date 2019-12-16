@@ -1,0 +1,6 @@
+framework module Pods_VKSecond_Tests {
+  umbrella header "Pods-VKSecond_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

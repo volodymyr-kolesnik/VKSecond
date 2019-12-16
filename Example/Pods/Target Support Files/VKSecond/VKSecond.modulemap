@@ -1,0 +1,6 @@
+framework module VKSecond {
+  umbrella header "VKSecond-umbrella.h"
+
+  export *
+  module * { export * }
+}

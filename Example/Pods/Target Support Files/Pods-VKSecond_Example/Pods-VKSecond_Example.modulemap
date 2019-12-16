@@ -1,0 +1,6 @@
+framework module Pods_VKSecond_Example {
+  umbrella header "Pods-VKSecond_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

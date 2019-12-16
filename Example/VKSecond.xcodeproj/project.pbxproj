@@ -42,11 +42,11 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		901FE250F4B5BD9E9F38F9A7 /* Pods-VKSecond_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKSecond_Example.release.xcconfig"; path = "Target Support Files/Pods-VKSecond_Example/Pods-VKSecond_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B16CEC2A3F1FC0DE8823CCF6 /* Pods-VKSecond_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKSecond_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VKSecond_Tests/Pods-VKSecond_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C87DB2A2F64BF01158D713E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C87DB2A2F64BF01158D713E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C8F7C3141F07EEB379F34768 /* Pods_VKSecond_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKSecond_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4DE9F2D1AA94B82E87BB97D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D4DE9F2D1AA94B82E87BB97D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D84C75659C22A88D3EE3D311 /* Pods_VKSecond_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKSecond_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3E43C4A7C411210FF610C79 /* VKSecond.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = VKSecond.podspec; path = ../VKSecond.podspec; sourceTree = "<group>"; };
+		E3E43C4A7C411210FF610C79 /* VKSecond.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VKSecond.podspec; path = ../VKSecond.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,6 @@
 				B16CEC2A3F1FC0DE8823CCF6 /* Pods-VKSecond_Tests.debug.xcconfig */,
 				1CBF9FCCB8756CC18C87DF58 /* Pods-VKSecond_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = C4X8L3S369;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = C4X8L3S369;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -291,10 +293,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VKSecond_Example/Pods-VKSecond_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/VKFirst/VKFirst.framework",
 				"${BUILT_PRODUCTS_DIR}/VKSecond/VKSecond.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VKFirst.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VKSecond.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -478,6 +482,7 @@
 			baseConfigurationReference = 5C68E652CCCA01B84DA2DFA8 /* Pods-VKSecond_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C4X8L3S369;
 				INFOPLIST_FILE = VKSecond/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +498,7 @@
 			baseConfigurationReference = 901FE250F4B5BD9E9F38F9A7 /* Pods-VKSecond_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C4X8L3S369;
 				INFOPLIST_FILE = VKSecond/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -507,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B16CEC2A3F1FC0DE8823CCF6 /* Pods-VKSecond_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = C4X8L3S369;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1CBF9FCCB8756CC18C87DF58 /* Pods-VKSecond_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = C4X8L3S369;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

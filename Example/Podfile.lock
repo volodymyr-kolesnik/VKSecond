@@ -1,0 +1,24 @@
+PODS:
+  - VKFirst (1.0.1)
+  - VKSecond (0.1.0):
+    - VKFirst (~> 1.0.0)
+
+DEPENDENCIES:
+  - VKFirst
+  - VKSecond (from `../`)
+
+SPEC REPOS:
+  https://github.com/volodymyr-kolesnik/privateSpecs:
+    - VKFirst
+
+EXTERNAL SOURCES:
+  VKSecond:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VKFirst: a06521a0613fa75a5f92534ed5613142bdb74267
+  VKSecond: aef0a6d7f39d0f999f555ba871c99ab44d9188b7
+
+PODFILE CHECKSUM: 03c7ad17d0958cc2d2e709290f2ef2a6fc2022cf
+
+COCOAPODS: 1.8.4

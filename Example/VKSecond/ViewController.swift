@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import VKSecond
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

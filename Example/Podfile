@@ -1,8 +1,10 @@
 use_frameworks!
+source 'https://github.com/volodymyr-kolesnik/privateSpecs'
 
 target 'VKSecond_Example' do
   pod 'VKSecond', :path => '../'
 
+  pod 'VKFirst'
   target 'VKSecond_Tests' do
     inherit! :search_paths
 
